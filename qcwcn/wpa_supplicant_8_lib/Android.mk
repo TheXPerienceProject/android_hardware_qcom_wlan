@@ -55,6 +55,8 @@ L_CFLAGS += -DCONFIG_P2P
 endif
 
 L_CFLAGS += -Werror
+L_CFLAGS += -Wno-error=deprecated-declarations
+L_CFLAGS += -Wno-error=sometimes-uninitialized
 
 ########################
 
