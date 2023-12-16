@@ -15,6 +15,5 @@ cc_library_shared {
         "-Werror",
         "-Wno-unused-parameter",
     ],
-    clang: true,
     srcs: ["cld80211_lib.c"],
 }
