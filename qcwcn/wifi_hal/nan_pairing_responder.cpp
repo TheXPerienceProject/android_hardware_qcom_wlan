@@ -282,7 +282,7 @@ wifi_error nan_pairing_indication_response(transaction_id id,
     peer->trans_id = id;
     peer->trans_id_valid = true;
     ret = handle_auth_pasn_1(pasn, pasn->own_addr, (u8 *)mgmt->sa, mgmt,
-                             peer->frame->len);
+                             peer->frame->len, false);
     if (ret == -1) {
         ALOGE("%s: Handle auth pasn 1 failed", __FUNCTION__);
         wpa_pasn_reset(pasn);
